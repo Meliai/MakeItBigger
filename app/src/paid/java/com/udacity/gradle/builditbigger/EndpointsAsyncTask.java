@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -56,6 +57,7 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
             mProgressBar.setVisibility(View.GONE);
         }
         mJoke = result;
+        Log.i("JOKE", result);
         Intent intent = new Intent(mContext, DisplayJokeActivity.class);
         intent.putExtra(DisplayJokeActivity.JOKE, mJoke);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
