@@ -37,7 +37,7 @@ dependencies {
     compile project(":displayjoke")
     compile project(path: ':backend', configuration: 'android-endpoints')
     compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.google.android.gms:play-services-ads:11.4.0'
+    freeCompile 'com.google.android.gms:play-services-ads:11.4.0'
     compile 'com.android.support:support-v4:26.1.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
 

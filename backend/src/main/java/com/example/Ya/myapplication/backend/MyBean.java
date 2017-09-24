@@ -1,19 +1,17 @@
 package com.example.Ya.myapplication.backend;
 
-import com.example.JokeLib;
-
 /**
  * The object model for the data we are sending through endpoints
  */
 public class MyBean {
 
-    private JokeLib joke;
+    private String myJoke;
 
-    public MyBean() {
-        joke = new JokeLib();
+    public String getMyJoke() {
+        return myJoke;
     }
 
-    public String getJoke() {
-        return joke.getJoke();
+    public void setMyJoke(String joke) {
+        myJoke = joke;
     }
 }
